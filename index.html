@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Averia Libre' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body style="background-image:linear-gradient( rgb(0, 0, 58),rgb(77, 3, 77)); background-attachment: fixed;" alt="background" >
+  <nav class="navbar  navbar-dark ms-auto bg-none">
+
+    <div class="container-fluid">
+
+            <div class="nav ms-auto ">
+
+                <a href="index.html" class="nav-item nav-link "  style="color: rgb(253, 251, 251); font-size:3.2vmin;font-family: 'Averia Libre'">Home</a>
+
+
+                <a href="#" class="nav-item nav-link" style="color: rgb(253, 250, 250); font-size :3.2vmin;font-family: 'Averia Libre'">About</a>
+
+           
+
+                <a href="#" class="nav-item nav-link" style="color: rgb(254, 253, 253);font-size:3.2vmin;font-family: 'Averia Libre'">Login</a>
+
+
+            </div>
+
+        </div>
+
+</nav>
+
+
+
+
+
+<div class="divcircle1"><div class="circle1" ></div></div>
+<div class="divbeans"><img src="doodle.png"alt="beans" class="beans1" ></div>
+<div ><img class="back" src="back3.png" alt="back" ></div>
+<h3 class="heading" style="position: absolute; top:14%;">Become Exclusive , Register Now!</h3>
+<div class="slideshow-container">
+
+<div class="mySlides s1 ">
+  <form class="form1">
+    <h6 style="font-family: 'Averia Libre'; font-size: 250%; text-align: center;margin:10% ; ">Choose your Username</h6>
+    <label for="textInput" >Input Field:</label>
+    <input type="text" id="textInput" oninput="checkInputField()"   >
+    <div id="emptyMessage">&#x21;  Input field is empty</div>
+    <div id="valid">&#9989; Valid</div>
+  </form>
+  <button id="proceed"  class="btn  rounded-pill" onclick="fun(0)">Proceed</button>
+</div>
+
+<div class="mySlides s2 ">
+  <form class="form2">
+    <label for="email" class="email" style="margin-top: 3%;">Enter Email :</label>
+  <div class="span1">
+    <input type="email" id="email"  >
+    <span id="invalidemail" >&#x21;</span>
+  </div> 
+    <label for="password">Enter Password</label>
+   <div class="span2">
+    <input type="password" id="password" >
+    <span id="invalidpassword" >&#x21;</span>
+   </div>
+    <h5> Your passward should contain atleast 8 characters</h5>
+
+    <div class="icon-container">
+        <a href="#" class="fa fa-facebook"></a>  
+        <a href="#" class="fa fa-twitter"></a>  
+
+       <a href="#" class="fa fa-linkedin"></a>  
+       <a href="#" class="fa fa-instagram"></a>  
+
+       <a href="#" class="fa fa-google"></a>  
+
+    </div>
+    
+  </form>
+  <button class="btn registerbtn rounded-pill"  onclick="register(1); loading()">Register</button>
+</div>
+
+<div class="mySlides s3 ">
+  <div style="display: flex;justify-content :center;">
+  <div class="load" id ="loadingElement"></div>
+
+  <div id="contentToShow"  class="text-wrap" style="display: none;"><p  class="text-center " >Registration  Succesfull  !</p></div>
+  </div>
+</div>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html> 
+
+
+
