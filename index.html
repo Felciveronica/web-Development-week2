@@ -83,7 +83,7 @@
     </div>
     
   </form>
-  <button class="btn registerbtn rounded-pill"  onclick="register(1); loading()">Register</button>
+  <button class="btn registerbtn rounded-pill"  onclick="register(1); ">Register</button>
 </div>
 
 <div class="mySlides s3 ">
@@ -204,6 +204,8 @@ function register(n)
       } 
       slides[2].style.display="block";
       slides[1].style.display="none";
+       loading();
+     
     }
 }
 
